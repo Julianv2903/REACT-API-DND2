@@ -1,0 +1,84 @@
+.versus-container {
+  padding: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1b1f26;
+  min-height: 100vh;
+}
+
+.versus-container h2 {
+  color: #ffcc00;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.versus-container p {
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.versus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #2b323d;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+button {
+  background-color: #49525c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27313d;
+}
+
+.vs-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.winner {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #00ffb3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .versus {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
